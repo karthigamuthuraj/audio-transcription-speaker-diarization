@@ -1,9 +1,9 @@
-Here’s a `README.md` file template for your project. This will provide clear instructions on how to set up and run your Streamlit app for audio transcription and speaker diarization.
 
-```markdown
 # Multilingual Audio Transcription and Speaker Diarization
 
 This project is a Streamlit application that uses OpenAI's Whisper model for multilingual speech-to-text transcription and the PyAnnote library for speaker diarization. Users can upload an audio file, and the app will transcribe the audio, detect the language, and label the transcription with speaker labels.
+
+![App Demo](audio_transcribe.png)
 
 ## Features
 
@@ -58,13 +58,6 @@ Make sure to have the following Python libraries installed. You can install them
    - The detected language of the audio.
    - The transcription with speaker labels.
 
-## Folder Structure
-
-- `app.py`: Main Streamlit app file that handles file uploads, audio processing, and UI rendering.
-- `requirements.txt`: List of dependencies required to run the app.
-- `upload/`: Folder where uploaded audio files are stored with unique timestamps.
-- `README.md`: This documentation file.
-
 ## Models
 
 ### Whisper Model
@@ -91,29 +84,3 @@ If the models fail to load, ensure that:
 If the file upload is not working correctly:
 - Ensure the `upload` folder exists in your project directory.
 - Make sure the file path is correct and accessible.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- [OpenAI Whisper](https://github.com/openai/whisper) for speech-to-text transcription.
-- [PyAnnote](https://github.com/pyannote/pyannote-audio) for speaker diarization.
-- [Streamlit](https://streamlit.io/) for building the interactive web app.
-
-```
-
-### Key Sections in the README:
-1. **Introduction**: Describes the project and its main features.
-2. **Requirements**: Lists the necessary dependencies and installation steps.
-3. **Usage**: Provides clear instructions on how to run the app and interact with it.
-4. **Folder Structure**: Describes the folder layout and the purpose of each file/folder.
-5. **Models**: Explains the use of Whisper and PyAnnote models.
-6. **Troubleshooting**: Offers guidance on common issues with model loading, file uploads, and processing errors.
-7. **License**: Mentions the project license (MIT by default, adjust as needed).
-8. **Acknowledgements**: Credits the external libraries used in the project.
-
-### Next Steps:
-1. Save this content as `README.md` in your project folder.
-2. Adjust the sections like repository URL or license as needed.
